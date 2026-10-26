@@ -181,4 +181,8 @@ out = out.replace("BleedCheck", "HerTruth")
 # the website and the iPhone app ship this exact page, so the check, scoring and iron model are identical in both
 (R.parent / "web/index.html").write_text(out)
 (R.parent / "ios/HerTruth/hertruth.html").write_text(out)
+# the final app folders in Claude Stuff get the same page
+FINAL = R.parent.parent.parent
+for rel in ("HerTruth Website/index.html", "HerTruth iOS/HerTruth/hertruth.html", "HerTruth Android/assets/hertruth.html"):
+    if (FINAL / rel).parent.is_dir(): (FINAL / rel).write_text(out)
 print("ok", len(out) // 1024, "KB")
