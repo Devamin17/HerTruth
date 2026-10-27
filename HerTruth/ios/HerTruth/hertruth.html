@@ -1327,6 +1327,10 @@ main .btn,main .btn-main{justify-content:center;text-align:center}
 main .btn--big{align-items:center}
 main .imp-next{display:flex;margin-inline:auto}
 main [class*="legend"],main [class*="key"]{justify-content:center;text-align:center}
+/* icon + text rows: the row sits centered, the text next to the icon reads left to right */
+main :is(.hero-trust,.help-urgent){width:fit-content}
+main :is(.hero-trust,.help-urgent) > span{text-align:start}
+main .fn dd{text-align:start}
 
 /* required styles */
 
