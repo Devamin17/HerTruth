@@ -26,7 +26,7 @@ Xcode was not on this Mac when I checked. If the App Store download is already r
 4. Open **Xcode** from Launchpad or the Applications folder. Agree to the license if asked.
 5. When Xcode asks which platforms to install, check **iOS** and click **Download & Install**. This adds the iPhone Simulator.
    If it does not ask: Xcode menu > **Settings** > **Components**, then click **Get** next to iOS.
-6. Optional, lets command-line tools (and Claude) build the app. In Terminal, enter your Mac password when asked:
+6. Optional, lets command-line tools build the app. In Terminal, enter your Mac password when asked:
 
 ```bash
 sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
